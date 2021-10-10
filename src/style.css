@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background: #1d0955;
-    color: #ffffff;
+    background: var(--purple);
+    color: var(--white);
 }
 .header{
-    background:linear-gradient(180deg, rgba(0, 85, 197, 0.31) 0%, #1d053b 85.62%), url('.//bg/bg.png') no-repeat center top / cover ;
+    background:linear-gradient(180deg, rgba(0, 85, 197, 0.31) 0%, #1d053b 85.62%), url('./bg/bg.png') no-repeat center top / cover ;
     min-height: 100vh;
 }
 .header__logo{
@@ -28,19 +28,18 @@ body{
 .menu{
     list-style-type: none;
     display: flex;
-    margin: 0;
-    margin-left: 17px;
+    margin: 0 0 0 17px;
 }
 .menu__items{
     margin-right: 25px;
 }
 .menu__link{
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 .user{
     margin-left: auto;
-    color: white;
+    color: var(--white);
     display: flex;
     align-items: center;
     
@@ -50,7 +49,7 @@ body{
 }
 .film{
     margin-top: 60px;
-    color: white;
+    color: var(--white);
     display: flex;
     align-items: center;
 }
@@ -141,8 +140,8 @@ line-height: 35px;
 line-height: 22px;
 }
 .session__data_item:hover{
-    background-color: #FE8E05;
-    color: #621402;
+    background-color: var(--orange);
+    color: var(--brown);
 }
 .select{
     margin-top: 15px;
@@ -152,11 +151,11 @@ line-height: 22px;
     padding: 18px;
     width: 470px;
     height: 60px;
-    color: white;
+    color: var(--white);
     cursor: pointer;
 }
 .option{
-    background-color:#172967;
+    background-color: var(--blue);
 }
 .select_time{
     margin-top: 13px;
@@ -165,6 +164,6 @@ line-height: 22px;
     border-radius: 5px;
     width: 108px;
     height: 60px;
-    color: white;
+    color: var(--white);
     cursor: pointer;
 }
