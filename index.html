@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <title>Cinema</title>
+</head>
+<header class="header">
+<div class="navbar container">
+    <a class="header__logo">
+    <img src="./src/logo/logo-svg.svg" alt="">
+</a>
+<nav class="header__nav">
+    <ul class="menu">
+        <li class="menu__items">
+            <a href="#" class="menu__link">Главная</a>
+        </li>
+        <li class="menu__items">
+            <a href="#" class="menu__link">Фильмы</a>
+        </li>
+        <li class="menu__items">
+            <a href="#" class="menu__link">Кинотеатры</a>
+        </li>
+        <li class="menu__items">
+            <a href="#" class="menu__link">События</a>
+        </li>
+        <li class="menu__items">
+            <a href="#" class="menu__link">Поддержка</a>
+        </li>
+    </ul>
+</nav>
+<div class="user">
+    <span class="avatar">Привет, Катя</span>
+    <img src="./src/logo/Rectangle 1.png" alt="">
+</div>
+</div>
+<div class="film container">
+    <div class="film__info">
+        <small class="film__title_small">Avengers: Infinity War</small>
+        <h1 class="film__title">Мстители: война бесконечности</h1>
+        <p class="film__description">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.
+
+        </p>
+        <div class="film__details">
+            <div class="time">
+                <img src=".//src/img/clock.svg" alt="clock" class="time__icon">
+                <span class="time_counter">240 min</span>
+            </div>
+            <div class="rating">
+                <img src=".//src/img/imdb.jpg" alt="" class="rating__icon">
+                <span class="rating_counter"><strong class="rating_current">9.2</strong>/ 10</span>
+            </div>
+        </div>
+    </div>
+    <a href="" class="film__trailer">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="white"/>
+            <g clip-path="url(#clip0)">
+                <path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+                <rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+            </clipPath>
+            </defs>
+        </svg>            
+    </a>
+ </div>
+ <div class="session container">
+     <div class="session__data">
+         <span class="session_label">Дата</span>    
+         <div class="session__data_block">
+            <div class="session__data_item">
+                <span class="session_month">Apr</span>
+                <span class="session_day">27</span>
+                <span class="session_week">Mon</span></div>
+            <div class="session__data_item">
+                <span class="session_month">Apr</span>
+                <span class="session_day">28</span>
+                <span class="session_week">Tue</span></div>
+            <div class="session__data_item">
+                <span class="session_month">Apr</span>
+                <span class="session_day">29</span>
+                <span class="session_week">Wed</span></div>
+            <div class="session__data_item">
+                <span class="session_month">Apr</span>
+                <span class="session_day">30</span>
+                <span class="session_week">Thu</span></div> 
+         </div>
+     </div>
+     <div class="session__cinema">
+        <span class="session_label">Кинотеатр</span>
+        <select name="cinema" class="select">
+            <option value="Октябрь, ул. Калужская 23"  class="option">Октябрь, ул. Калужская 23</option>
+            <option value="Butterfly, ул. Магнитогорская 7" class="option">Butterfly, ул. Магнитогорская 7</option>
+            <option value="Multiplex, ул. Независимости 15" class="option">Multiplex, ул. Независимости 15</option>
+        </select>
+      </div>
+     <div class="session__time">
+        <span class="session_label">Время</span>
+        <select name="time" class="select_time">
+            <option value="12:40"  class="option">12:40</option>
+            <option value="14:50" class="option">14:50</option>
+            <option value="18:20" class="option">18:20</option>
+            <option value="22:30" class="option">22:30</option>
+        </select>
+    </div>
+ </div>
+ 
+
+</header>
+<body>
+    
+</body>
+</html>
+
