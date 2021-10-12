@@ -9,10 +9,16 @@ body{
 }
 .header{
     background:linear-gradient(180deg, rgba(0, 85, 197, 0.31) 0%, #1d053b 85.62%), url('./bg/bg.png') no-repeat center top / cover ;
-    min-height: 100vh;
+    padding-bottom: 60px;
 }
 .header__logo{
     transform: rotate(-23deg);
+}
+.m_menu{
+    display: none;
+}
+.nav{
+    position: relative;
 }
 .navbar{
     display: flex;
@@ -23,7 +29,7 @@ body{
 .container{
     max-width: 1170px;
     margin: auto;
-
+    width: 90%;
 }
 .menu{
     list-style-type: none;
@@ -154,6 +160,9 @@ line-height: 22px;
     color: var(--white);
     cursor: pointer;
 }
+.session__cinema{
+    width: 470px;
+}
 .option{
     background-color: var(--blue);
 }
@@ -167,3 +176,172 @@ line-height: 22px;
     color: var(--white);
     cursor: pointer;
 }
+.scheme{
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+    margin: 87px 170px 40px 170px;
+}
+.scheme_svg{
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+}
+.scheme path{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.scheme path:not(.light){
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.scheme path:not(.light):hover{
+    fill: rgba(255, 255, 255, 0.5);
+}
+.scheme path.booked,
+.scheme path.booked:hover{
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+.scheme path.active,
+.scheme path.active:hover{
+    fill: #FE8E05;
+}
+.legend{
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    padding: 22px 0 38px 0;
+    max-width: 1024px;
+    width: 90%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.legend_label{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.legend svg{
+    margin-right: 10px;
+}
+.legend__booked .booked{
+    fill: rgba(255, 255, 255, 0.03);
+    cursor: not-allowed;
+}
+.price{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price_label{
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+.price_tag{
+    font-size: 52px;
+    line-height: 61px;
+}
+.button{
+    display: block;
+    padding: 24px 52px;
+    background: #FE8E05;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+}
+@media (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    .session__cinema{
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .scheme{
+        margin: 0 51px 0 51px;
+    }
+    #cinema{
+        margin-left: 30px;
+        max-width: 320px;
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+    }
+   .session{
+       flex-wrap: wrap;
+    }
+   .session__data{
+       flex-basis: 70%;
+   }
+   .session__time{
+       order: 2;
+   }
+   .session__cinema{
+       order: 3;
+       margin-top: 40px;
+   }
+   .menu__items{
+       margin-right: 20px;
+   }
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 560px;
+    }
+    .menu{
+        position: absolute;
+        padding: 20px 0 0 10px;
+        margin:65px 40px 60px 140px;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: #1d053b;
+        z-index: 9;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: opacity 0.5s, transform 0.5s ;
+
+    }
+    .menu__items:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .m_menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: 45px;
+        height: 45px;
+        margin: 0 0 0 30px;
+        cursor: pointer;
+    }
+    .is_open{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .film__description{
+        margin-right: 30px;
+    }
+    .film{
+        flex-direction: column;
+    }
+    .film__trailer{
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .scheme{
+        margin: 0 104px 0 104px;
+    }
+    }
+
